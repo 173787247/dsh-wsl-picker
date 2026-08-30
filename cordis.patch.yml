@@ -1,0 +1,6 @@
+- insert:
+    - id: dsh-wsl-picker
+      name: dsh-wsl-picker
+      config:
+        timeoutMs: 15000
+        maxEntries: 200

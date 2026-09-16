@@ -8,6 +8,18 @@ DeepSeek Harness 插件：从 / 与 /mnt Windows 盘符浏览 WSL 目录，便�
 
 [English → README.md](./README.md)
 
+## 在套件里的位置
+
+列出 / 和 /mnt 下的目录，方便选工作区。不负责登记 IM 工作区。
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["wsl_picker"] --> fs["/ 与 /mnt 目录列表"]
+```
+
+整套关系图和版本快照：[dsh-wsl-kit 中文说明](https://github.com/173787247/dsh-wsl-kit/blob/master/README.zh.md)。本插件是 **0.1.0**（full）。不要把那份总表抄进本 README。
+
+
 ## 兼容性
 
 | 项 | 值 |

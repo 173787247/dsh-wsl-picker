@@ -1,6 +1,6 @@
 {
   "name": "dsh-wsl-picker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Browse WSL directories from / and /mnt drives for workspace picking.",
   "license": "MIT",
   "repository": {

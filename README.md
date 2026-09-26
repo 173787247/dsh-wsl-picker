@@ -17,14 +17,14 @@ flowchart LR
   agent["dsh agent"] --> tool["wsl_picker"] --> fs["/ and /mnt listings"]
 ```
 
-Suite diagram and version snapshot: [dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit#how-the-pieces-fit). This plugin is **0.1.0** (full). Do not copy that matrix into this README.
+Suite diagram and version snapshot: [dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit#how-the-pieces-fit). This plugin is **0.1.1** (full). Do not copy that matrix into this README.
 
 
 ## Compatibility
 
 | Field | Value |
 |-------|-------|
-| **Plugin** | `dsh-wsl-picker` **0.1.0** |
+| **Plugin** | `dsh-wsl-picker` **0.1.1** |
 | **Minimum dsh** | ≥ **0.1.2** (web UI one-shot `?token=` on Windows relay `:3081`) |
 | **Latest verified** | See [dsh-wsl-kit Compatibility](https://github.com/173787247/dsh-wsl-kit#compatibility-2026-09) (currently **`0.1.7-alpha.2`**) — single source of truth for the suite |
 | **Kit set** | `full` or install alone |
@@ -42,6 +42,12 @@ dsh plugin --profile web add /absolute/path/to/dsh-wsl-picker
 ```
 
 Restart `dsh web` and open a **new** session. Tool: `wsl_picker`.
+
+| Arg | Meaning |
+|-----|---------|
+| `path` / `start` | Directory to list; `start` preferred. Empty `start` or `im` → `~/.dsh/im-workspace` |
+| `filter` | Case-insensitive substring on entry names |
+| `showHidden` | Include dotfiles |
 
 ## License
 

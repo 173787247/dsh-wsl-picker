@@ -11,12 +11,12 @@ export function apply(ctx, config = {}) {
   ctx.systemPrompt.section({
     name: "tool:wsl_picker",
     order: 111,
-    text: "Use wsl_picker for WSL/Windows interop: Browse WSL directories from / and /mnt drives for workspace picking.",
+    text: "Use wsl_picker to browse WSL dirs (/ and /mnt). Pass start=im (or empty start) for ~/.dsh/im-workspace quick entries; optional filter substring.",
   });
 
   ctx.tools.register({
     name: "wsl_picker",
-    description: "Browse WSL directories from / and /mnt drives for workspace picking.",
+    description: "Browse WSL directories (/ and /mnt). start=im or empty start lists ~/.dsh/im-workspace; optional filter.",
     parameters: core.parameters(config),
     output: {
       schema: core.outputSchema(),
